@@ -201,13 +201,3 @@ def start_transfers(server_ip, server_tcp_port, server_udp_port, file_size):
     udp_thread.start()
     tcp_thread.join()
     udp_thread.join()
-
-
-
-
-
-if __name__ == "_main_":
-    start_server(SERVER_TCP_PORT, SERVER_UDP_PORT)
-    server_ip = '192.168.1.5'  # Server IP address
-    file_size = 1024 * 1024 * 1  # File size of 1MB for example
-    start_transfers(server_ip, SERVER_TCP_PORT, SERVER_UDP_PORT, file_size)
